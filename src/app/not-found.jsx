@@ -2,8 +2,8 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>4040</h1>
+    <div className='flex min-h-screen items-center justify-center'>
+      <h1 className='text-5xl'>404</h1>
     </div>
   )
 }

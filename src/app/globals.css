@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+
+
+
+@media (max-width : 896px) {
+    ul{
+        position: fixed;
+        top: 100%;
+        background-color: #fff;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 90vh;
+        width: 100%;
+    }  
+    .hamburger{
+        height: 30px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+        & span{
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            border-radius: 50px;
+        }
+    }
+    .open span{
+        transition: 300ms ease;
+        &:first-child{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            rotate: -45deg;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+        &:last-child{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            rotate: 45deg;
+        }
+    }  
+}

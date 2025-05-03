@@ -10,7 +10,7 @@
 }
 .searchBar{
     flex: 1;
-    max-width: 500px;
+    max-width: 50%;
     display: flex;
     align-items: center;
     margin-left: 20px;

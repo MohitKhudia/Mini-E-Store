@@ -23,7 +23,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="md:w-1/2 h-full relative overflow-hidden">
+    <div className="md:w-1/2 w-full h-full relative overflow-hidden">
       {images.map((src, index) => (
         <div
           key={index}
